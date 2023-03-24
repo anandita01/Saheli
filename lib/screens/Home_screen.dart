@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gsochome/screens/add_contacts.dart';
 
 import '../widgets/customcontainer.dart';
+
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,9 +22,14 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('Option 1'),
+              title: Text('Trusted Contacts'),
               onTap: () {
                 // Do something
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AddContactsPage(),
+                    ));
               },
             ),
             ListTile(
@@ -34,11 +41,11 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-      body:SafeArea(child:
-      Column(
+      body: SafeArea(
+          child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 40,bottom: 20),
+            padding: const EdgeInsets.only(top: 40, bottom: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -96,8 +103,10 @@ class MyHomePage extends StatelessWidget {
           const SizedBox(
             height: 30.0,
           ),
-          Text('GOVERNMENT SCHEMES',
-            style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: 30),
+          Text(
+            'GOVERNMENT SCHEMES',
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.black, fontSize: 30),
             textAlign: TextAlign.start,
           ),
           const SizedBox(
@@ -107,21 +116,36 @@ class MyHomePage extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[
-                CustomContainer(color: Color(0xFF8BF5FA), schemename: '2017 Scheme', info: '',),
-                CustomContainer(color: Color(0xFF3F979B), schemename: '2018 scheme', info: '',),
-                CustomContainer(color: Color(0xFF8BF5FA), schemename: '', info: '',),
-                CustomContainer(color: Color(0xFF3F979B), schemename: '', info: '',),
-                CustomContainer(color: Color(0xFF8BF5FA), schemename: '', info: '',),
+                CustomContainer(
+                  color: Color(0xFF8BF5FA),
+                  schemename: '2017 Scheme',
+                  info: '',
+                ),
+                CustomContainer(
+                  color: Color(0xFF3F979B),
+                  schemename: '2018 scheme',
+                  info: '',
+                ),
+                CustomContainer(
+                  color: Color(0xFF8BF5FA),
+                  schemename: '',
+                  info: '',
+                ),
+                CustomContainer(
+                  color: Color(0xFF3F979B),
+                  schemename: '',
+                  info: '',
+                ),
+                CustomContainer(
+                  color: Color(0xFF8BF5FA),
+                  schemename: '',
+                  info: '',
+                ),
               ],
             ),
           ),
-
         ],
-
       )),
-
-
     );
   }
 }
-
