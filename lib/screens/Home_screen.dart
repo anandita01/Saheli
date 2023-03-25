@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 
 import '../widgets/customcontainer.dart';
@@ -6,6 +7,9 @@ import '../widgets/customcontainer.dart';
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    const number = '+917678471051';
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF3F979B),
@@ -58,7 +62,9 @@ class MyHomePage extends StatelessWidget {
                     iconSize: 40,
                     icon: const Icon(Icons.phone),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed:()  async {
+                      await FlutterPhoneDirectCaller.callNumber(number);
+                    },
                   ),
                 ),
                 Ink(
