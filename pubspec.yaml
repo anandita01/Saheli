@@ -41,6 +41,12 @@ dependencies:
   contacts_service: ^0.6.3
   fluttertoast: ^8.2.1
 
+  #launch phone call indirectly
+  url_launcher: ^6.0.9
+
+  #launch phone call directly
+  flutter_phone_direct_caller: ^2.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
