@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gsochome/screens/login_screen.dart';
 import 'package:gsochome/screens/welcome_screen.dart';
 import 'package:gsochome/widgets/customcontainer.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Saheli',
       color: Color(0xFF205E61),
 
-      home: WelcomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
