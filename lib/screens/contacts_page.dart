@@ -4,7 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:gsochome/db/db_services.dart';
 import 'package:gsochome/model/contactsm.dart';
-import 'package:gsochome/utils/constraints.dart';
+import '../utils/constants.dart';
 
 class ContactsPage extends StatefulWidget {
   const ContactsPage({Key? key}) : super(key: key);

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 
 import '../widgets/customcontainer.dart';
@@ -39,7 +40,12 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               title: Text('Option 2'),
               onTap: () {
-                // Do something
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => About_Us(),
+                    ));
+
               },
             ),
           ],
