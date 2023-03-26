@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gsochome/screens/login_screen.dart';
-import 'package:gsochome/screens/welcome_screen.dart';
-import 'package:gsochome/widgets/customcontainer.dart';
+
 
 void main() => runApp(MyApp());
 

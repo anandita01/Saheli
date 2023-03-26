@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 
 import '../widgets/customcontainer.dart';
@@ -9,7 +10,6 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     const number = '+917678471051';
-    const Ambulance = '+917678471051';
 
     return Scaffold(
       appBar: AppBar(
@@ -21,40 +21,10 @@ class MyHomePage extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              
-               margin: const EdgeInsets.fromLTRB(50, 50, 50, 20),
-             
-              child: Ink(
-                    decoration: const ShapeDecoration(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                    shape: CircleBorder(),
-                  ),
-                  child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                          'assets/profile_2.PNG',
-                          width: 150,
-                          height: 89,
-                    ),
-                 
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  const Text(
-                    "XYZ",
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                ],
+              child: Text('MENU'),
+              decoration: BoxDecoration(
+                color: Color(0xFF3F979B),
               ),
-                 
-                ),
-
-
             ),
             ListTile(
               title: Text('Trusted Contacts'),
@@ -67,87 +37,20 @@ class MyHomePage extends StatelessWidget {
                     ));
               },
             ),
-           
-            Card(
-              margin: const EdgeInsets.fromLTRB(50, 5, 50, 10),
-          color: Color(0xFF3F979B),
-          child: SizedBox(
-          width: 50,
-          height: 60,
-          child: ListTile(
-            title: Text('Ambulance',
-    //textAlign: TextAlign.center,
-    style: TextStyle(
-      fontSize: 20,
-    color: Color.fromARGB(255, 254, 255, 255),
-  ),
-      ),
-            trailing:IconButton(
-                    iconSize: 25,
-                    icon: const Icon(Icons.phone),
-                    color: Colors.white,
-                    onPressed:()  async {
-                      await FlutterPhoneDirectCaller.callNumber(Ambulance);
-                    },
-                  ),
-          ),
-        ),
+            ListTile(
+              title: Text('Option 2'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => About_Us(),
+                    ));
+
+              },
             ),
-
-
-            Card(
-              margin: const EdgeInsets.fromLTRB(50, 10, 50, 10),
-          color: Color(0xFF3F979B),
-          child: SizedBox(
-          width: 50,
-          height: 60,
-          child: ListTile(
-            title: Text('   Police',
-    textAlign: TextAlign.center,
-    style: TextStyle(
-      fontSize: 20,
-    color: Color.fromARGB(255, 254, 255, 255),
-  ),
-      ),
-            trailing: IconButton(
-                    iconSize: 25,
-                    icon: const Icon(Icons.phone),
-                    color: Colors.white,
-                    onPressed:()  async {
-                      await FlutterPhoneDirectCaller.callNumber(Ambulance);
-                    },
-                  ),
-          ),
+          ],
         ),
-            ),
-
-
-            Card(
-              margin: const EdgeInsets.fromLTRB(50, 240, 50, 10),
-          color: Color(293462),
-          child: SizedBox(
-          width: 50,
-          height: 60,
-          child: ListTile(
-            title: Text('About this app',
-    textAlign: TextAlign.center,
-    style: TextStyle(
-      fontSize: 17,
-    color: Color.fromARGB(255, 254, 255, 255),
-  ),
       ),
-           
-          ),
-        ),
-            ),
-
-
-       
-        ],
-        ),
-       
-      ),
-
       body: SafeArea(
           child: Column(
         children: [

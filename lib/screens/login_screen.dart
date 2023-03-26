@@ -49,14 +49,7 @@ class LoginScreen extends StatelessWidget {
               CustomTextfield(
                   hintText: "Enter password",
                   prefix: Icon(Icons.lock)),
-              CustomButton(onPressed: (){Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return WelcomeScreen();
-                            },
-                          ), // MaterialPageRoute
-                        );}, text: 'LOGIN',),
+              CustomButton(onPressed: (){}, text: 'LOGIN',),
               //OnTapbutton(title: "Forgot password", onPressed: onPressed(){})
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
