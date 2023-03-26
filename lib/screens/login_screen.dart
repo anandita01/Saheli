@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gsochome/components/custom_textfield.dart';
 import 'package:gsochome/components/ontapbutton.dart';
-import 'package:gsochome/screens/register_child.dart';
 import 'package:gsochome/screens/welcome_screen.dart';
 import 'package:gsochome/widgets/custom_button.dart';
 import 'package:lottie/lottie.dart';
-
-import '../utils/constants.dart';
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -52,16 +49,7 @@ class LoginScreen extends StatelessWidget {
               CustomTextfield(
                   hintText: "Enter password",
                   prefix: Icon(Icons.lock)),
-              CustomButton(onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return WelcomeScreen();
-                    },
-                  ), // MaterialPageRoute
-                );
-              }, text: 'LOGIN',),
+              CustomButton(onPressed: (){}, text: 'LOGIN',),
               //OnTapbutton(title: "Forgot password", onPressed: onPressed(){})
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -95,11 +83,7 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                         fontSize: 15,)
                   ),
-                  OnTapbutton(title: "Register here", onPressed: (){
-
-                      goTo(context, RegisterChildScreen());
-
-                  })
+                  OnTapbutton(title: "Register here", onPressed: (){})
                 ],
               ),
 
