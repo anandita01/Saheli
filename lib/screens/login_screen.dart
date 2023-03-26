@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gsochome/components/custom_textfield.dart';
 import 'package:gsochome/components/ontapbutton.dart';
+import 'package:gsochome/screens/register_child.dart';
 import 'package:gsochome/screens/welcome_screen.dart';
 import 'package:gsochome/widgets/custom_button.dart';
 import 'package:lottie/lottie.dart';
@@ -83,7 +84,13 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                         fontSize: 15,)
                   ),
-                  OnTapbutton(title: "Register here", onPressed: (){})
+                  OnTapbutton(title: "Register here", onPressed: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => RegisterChildScreen(),
+                        ));
+                  })
                 ],
               ),
 
