@@ -80,9 +80,13 @@ class About_Us extends StatelessWidget {
             child: Container(
                 alignment: Alignment.center,
                 child: Text(
-                    '',
+                    '''This app allows women to feel more secure by connecting to family members or seek government help. We have developed this app to make women feel empowered and strong.
+                                                      Fearures of the app include: Calling feature, finding the locations of nearby hospitals, police stations, pharmacies etc, SOS message sending button which also sends the location of the user.''',
+                                        
                     style: TextStyle(
-                        fontSize: 20.0, fontWeight: FontWeight.w100))),
+                        fontSize: 20.0, fontWeight: FontWeight.w100)
+                        )
+                        ),
           ),
         ]),
       ),
