@@ -124,23 +124,28 @@ class MyHomePage extends StatelessWidget {
 
 
             Card(
-              margin: const EdgeInsets.fromLTRB(50, 240, 50, 10),
+              margin: const EdgeInsets.fromLTRB(50, 220, 50, 10),
           color: Color(293462),
-          child: SizedBox(
-          width: 50,
-          height: 60,
-          child: ListTile(
-            title: Text('About this app',
-    textAlign: TextAlign.center,
-    style: TextStyle(
-      fontSize: 17,
-    color: Color.fromARGB(255, 254, 255, 255),
+          child: TextButton(
+  style: ButtonStyle(
+    foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
   ),
-      ),
-           
-          ),
-        ),
+  onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => About_Us()));
+                      },
+  child: Text('About this App',
+  textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
+  ),),
+)
             ),
+
+            
 
 
        
