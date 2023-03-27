@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:gsochome/screens/add_contacts.dart';
-
+import 'package:gsochome/widgets/live_safe.dart';
 import '../widgets/customcontainer.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -122,13 +122,36 @@ class MyHomePage extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[
+                /*Expanded(child: Text(
+                    'Launched on 22nd January 2015 by the Prime Minister of India in Haryana, the Beti Bachao Beti Padhao Scheme ensures survival, protection and education of girl children. The scheme aims to address issues of the declining sex ratio over the past few years, create social awareness and enhance the efficiency of welfare services developed for girls.',
+                  maxLines:3,
+                  overflow: TextOverflow.ellipsis,
+
+                )),*/
                 CustomContainer(
                   color: Color(0xFF8BF5FA),
-                  schemename: '2017 Scheme',
-                  info: '',
+                  /*decoration: BoxDecoration(
+                    color: Color(0xFF8BF5FA),
+                    image: DecorationImage(
+                      image: AssetImage(
+                          'assets/BetiPadhao.jpg'),
+                      fit: BoxFit.fill,
+                    ),*/
+                  schemename: 'Beti Bachao Beti Padhao Scheme',
+                  info: 'Launched on 22nd January 2015 by the Prime Minister of India in Haryana, the Beti Bachao Beti Padhao Scheme ensures survival, protection and education of girl children. The scheme aims to address issues of the declining sex ratio over the past few years, create social awareness and enhance the efficiency of welfare services developed for girls.',
+
+
+
                 ),
+
                 CustomContainer(
                   color: Color(0xFF3F979B),
+                  /*image: new DecorationImage(
+                    fit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                    image: new NetworkImage(
+                      'assets/BetiPadhao.jpg',
+                    )*/
                   schemename: '2018 scheme',
                   info: '',
                 ),
@@ -150,6 +173,16 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Locations",
+                style: TextStyle(
+                    fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+
+          ),
+          LiveSafe(),
         ],
       )),
     );
