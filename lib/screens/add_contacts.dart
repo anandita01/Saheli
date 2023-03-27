@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:gsochome/screens/contacts_page.dart';
-import 'package:gsochome/components/PrimaryButton.dart';
+import 'package:gsochome/components/custom_button.dart';
 import 'package:gsochome/db/db_services.dart';
 import 'package:gsochome/model/contactsm.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
+
 
 class AddContactsPage extends StatefulWidget {
   const AddContactsPage({super.key});
@@ -59,7 +61,7 @@ class _AddContactsPageState extends State<AddContactsPage> {
           padding: EdgeInsets.all(12),
           child: Column(
             children: [
-              PrimaryButton(
+              CustomButton(
                   title: "Add Trusted Contacts",
                   onPressed: () async {
                     bool result = await Navigator.push(

@@ -20,7 +20,7 @@ class WelcomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/saheli.jpg'),
+                  Image.asset('assets/saheli2.jpg'),
                   const SizedBox(
                     height: 20,
                   ),
