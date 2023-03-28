@@ -52,6 +52,10 @@ dependencies:
   #launch phone call directly
   flutter_phone_direct_caller: ^2.0.0
 
+  rating_dialog: ^2.0.4
+
+  share_plus: ^6.3.1
+
 
 
 dev_dependencies:
