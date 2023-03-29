@@ -9,7 +9,7 @@ class RateUs extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.pink[100],
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Container(
         width: size.width,
         height: size.height,
@@ -18,7 +18,8 @@ class RateUs extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             RatingDialog(
-                title: Text('Rate Us', selectionColor: Colors.blueAccent,),
+                title: Text('Rate Us', 
+                selectionColor: Colors.blueAccent,),
                 //   message: Text(" Tap to start Rating "),
                 image: Icon(Icons.star, size: 100, color: Colors.red),
                 submitButtonText: 'Submit',
