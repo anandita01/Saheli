@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:gsochome/screens/Rate_us.dart';
 import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 import 'package:gsochome/screens/call_gov.dart';
+import 'package:gsochome/screens/login_screen.dart';
 import 'package:gsochome/widgets/live_safe.dart';
 import '../widgets/customcontainer.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
+
 
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    
-
-    const number = '+917678471051';
-    const Ambulance = '+917678471051';
 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF3F979B),
         title: Text('SAHELI'),
       ),
-      drawer:  Drawer(
+      drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -61,7 +61,32 @@ class MyHomePage extends StatelessWidget {
 
             ),
 
-           /* ListTile(
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 20, 50, 10),
+          color: Color(0XFF159895),
+          child: SizedBox(
+          width: 50,
+          height: 55,
+          child:  ListTile(
+              title: Text('Trusted Contacts',
+              textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 17,
+    color: Color.fromARGB(255, 254, 255, 255),
+    ),
+    ),
+              onTap: () {
+                // Do something
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AddContactsPage(),
+                    ));
+              },
+            ),
+        ),
+            ),
+            /*ListTile(
               title: Text('Trusted Contacts'),
               onTap: () {
                 // Do something
@@ -72,76 +97,150 @@ class MyHomePage extends StatelessWidget {
                     ));
               },
             ),*/
-           
-           Center(  
-          child: GridView.extent(  
-            primary: false,  
-            padding: const EdgeInsets.all(6),  
-            crossAxisSpacing: 10,  
-            mainAxisSpacing: 10,  
-            maxCrossAxisExtent: 200.0,  
-            children: <Widget>[  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('First', style: TextStyle(fontSize: 20)),  
-                color: Colors.yellow,  
-              ),  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('Second', style: TextStyle(fontSize: 20)),  
-                color: Colors.blue,  
-              ),  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('Third', style: TextStyle(fontSize: 20)),  
-                color: Colors.blue,  
-              ),  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('Four', style: TextStyle(fontSize: 20)),  
-                color: Colors.yellow,  
-              ),  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('Fifth', style: TextStyle(fontSize: 20)),  
-                color: Colors.yellow,  
-              ),  
-              Container(  
-                padding: const EdgeInsets.all(8),  
-                child: const Text('Six', style: TextStyle(fontSize: 20)),  
-                color: Colors.blue,  
-              ),  
-            ],  
 
-              /*Card
-              (margin: const EdgeInsets.fromLTRB(50, 220, 50, 10),
-          color: Color(293462),
-          child: TextButton(
-  style: ButtonStyle(
-    foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-  ),
-  onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => About_Us()));
-                      },
-  child: Text('About this App',
-  textAlign: TextAlign.center,
+
+            /*Card(
+              margin: const EdgeInsets.fromLTRB(50, 5, 50, 10),
+          color: Color(0xFF3F979B),
+          child: SizedBox(
+          width: 50,
+          height: 60,
+          child: ListTile(
+            title: Text('Ambulance',
+    //textAlign: TextAlign.center,
     style: TextStyle(
       fontSize: 20,
-    color: Color.fromARGB(255, 255, 255, 255),
-  ),),
-)
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+            trailing:IconButton(
+                    iconSize: 25,
+                    icon: const Icon(Icons.phone),
+                    color: Colors.white,
+                    onPressed:()  async {},
+                  ),
+          ),
+        ),
+            ),
+
+
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 10, 50, 10),
+          color: Color(0xFF3F979B),
+          child: SizedBox(
+          width: 50,
+          height: 60,
+          child: ListTile(
+            title: Text('   Police',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 20,
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+            trailing: IconButton(
+                    iconSize: 25,
+                    icon: const Icon(Icons.phone),
+                    color: Colors.white,
+                    onPressed:()  async {},
+                  ),
+          ),
+        ),
             ),*/
 
-            
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 20, 50, 10),
+          color: Color(0XFF1A5F7A),
+          child: SizedBox(
+          width: 50,
+          height: 55,
+          child: ListTile(
+            title: Text('About this app',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 17,
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+      onTap:(){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>About_Us()));
+      },
+           
+          ),
+        ),
+            ),
 
 
-          )
-           ) 
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 20, 50, 10),
+          color: Color(0XFF002B5B),
+          child: SizedBox(
+          width: 50,
+          height: 55,
+          child: ListTile(
+            title: Text('Rate us',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 17,
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+
+      onTap:(){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>RateUs()));
+      },
+           
+          ),
+        ),
+            ),
+
+
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 20, 50, 10),
+          color: Color(0XFF159895),
+          child: SizedBox(
+          width: 50,
+          height: 55,
+          child: ListTile(
+            title: Text('Log Out',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 17,
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+
+      onTap:(){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+      },
+           
+          ),
+        ),
+            ),
+
+
+            Card(
+              margin: const EdgeInsets.fromLTRB(50, 20, 50, 10),
+          color: Color(0XFF1A5F7A),
+          child: SizedBox(
+          width: 50,
+          height: 55,
+          child: ListTile(
+            title: Text('Tips',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 17,
+    color: Color.fromARGB(255, 254, 255, 255),
+  ),
+      ),
+           
+          ),
+        ),
+            ),
+
+
+       
         ],
-      
         ),
        
       ),
@@ -243,7 +342,6 @@ class MyHomePage extends StatelessWidget {
           
                   )),*/
                   CustomContainer(
-                    color: Color(0xFF8BF5FA),
                     /*decoration: BoxDecoration(
                       color: Color(0xFF8BF5FA),
                       image: DecorationImage(
@@ -259,7 +357,6 @@ class MyHomePage extends StatelessWidget {
                   ),
           
                   CustomContainer(
-                    color: Color(0xFF3F979B),
                     /*image: new DecorationImage(
                       fit: BoxFit.cover,
                       colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
@@ -270,17 +367,14 @@ class MyHomePage extends StatelessWidget {
                     info: '',
                   ),
                   CustomContainer(
-                    color: Color(0xFF8BF5FA),
                     schemename: '',
                     info: '',
                   ),
                   CustomContainer(
-                    color: Color(0xFF3F979B),
                     schemename: '',
                     info: '',
                   ),
                   CustomContainer(
-                    color: Color(0xFF8BF5FA),
                     schemename: '',
                     info: '',
                   ),
