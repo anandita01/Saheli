@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 class CustomContainer extends StatelessWidget {
-  final Color color;
+  //final Color color;
   final String schemename;
   final String info;
 
-  const CustomContainer({Key? key, required this.color, required this.schemename, required this.info}) : super(key: key);
+  const CustomContainer({Key? key,  required this.schemename, required this.info}) : super(key: key);
 
 
   @override
@@ -14,9 +14,24 @@ class CustomContainer extends StatelessWidget {
       height: 300,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(10),
+            gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              stops: [
+                0.1,
+                0.4,
+                0.6,
+                0.9,
+              ],
+              colors: [
+                Colors.yellow,
+                Colors.red,
+                Colors.indigo,
+                Colors.teal,
+              ],
+              )
       ),
+      
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
