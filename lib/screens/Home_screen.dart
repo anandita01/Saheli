@@ -5,9 +5,10 @@ import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 import 'package:gsochome/screens/call_gov.dart';
 import 'package:gsochome/screens/login_screen.dart';
+import 'package:gsochome/screens/safehome.dart';
 import 'package:gsochome/widgets/live_safe.dart';
 import '../widgets/customcontainer.dart';
-import 'package:gradient_app_bar/gradient_app_bar.dart';
+//import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -274,7 +275,12 @@ class MyHomePage extends StatelessWidget {
                         iconSize: 60,
                         icon: const Icon(Icons.sos_rounded),
                         color: Colors.white,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SafeHome()));
+                        },
                       ),
                     ),
                   ),

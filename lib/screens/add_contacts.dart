@@ -7,8 +7,6 @@ import 'package:gsochome/db/db_services.dart';
 import 'package:gsochome/model/contactsm.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-
-
 class AddContactsPage extends StatefulWidget {
   const AddContactsPage({super.key});
 
@@ -90,7 +88,6 @@ class _AddContactsPageState extends State<AddContactsPage> {
                               children: [
                                 IconButton(
                                     onPressed: () async {
-                                      //dosomething
                                       await FlutterPhoneDirectCaller.callNumber(
                                           contactList![index].number);
                                     },

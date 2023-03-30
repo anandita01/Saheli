@@ -56,6 +56,9 @@ dependencies:
   rating_dialog: ^2.0.4
 
   share_plus: ^6.3.1
+  background_sms: ^0.0.4
+  geocoding: ^2.1.0
+  geolocator: ^9.0.2
 
 
 
