@@ -29,6 +29,8 @@ Back end: FireBase & Firestore
 # Glimpses of our App:
 
 ![WhatsApp Image 2023-03-31 at 11 24 36 AM (2)](https://user-images.githubusercontent.com/114486225/229035827-3a2645da-30ef-4742-86a3-44ae4d9623ba.jpeg)
+![WhatsApp Image 2023-03-31 at 11 24 18 AM](https://user-images.githubusercontent.com/114486225/229043575-92cc8e0b-3232-4e87-ba13-2c16cfff2661.jpeg)
+
 
 ![WhatsApp Image 2023-03-31 at 11 24 36 AM](https://user-images.githubusercontent.com/114486225/229035871-af44af34-165c-40e7-aa5e-9462b7589397.jpeg)
 
