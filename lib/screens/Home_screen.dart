@@ -298,10 +298,10 @@ class MyHomePage extends StatelessWidget {
                       icon: const Icon(Icons.dangerous_rounded),
                       color: Colors.white,
                       onPressed: () {
-                        /*Navigator.push(
+                        Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>  self_defence()));
+                                builder: (context) =>  SelfDefence()));
                       },
                     ),
                   ),
