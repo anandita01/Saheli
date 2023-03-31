@@ -1,4 +1,4 @@
-# Human_cyborgs
+# Team Saheli
 Meet our team: 
 Drishti Anand-CSE/IGDTUW-2025
 Anandita -CSE/IGDTUW-2025
