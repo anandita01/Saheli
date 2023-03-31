@@ -237,14 +237,12 @@ class MyHomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Ink(
-                    decoration: const ShapeDecoration(
-                      color: Color.fromARGB(255, 182, 23, 20),
+                     decoration: const ShapeDecoration(
+                      color: Color(0xFF3F979B),
                       shape: CircleBorder(),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: IconButton(
-                        iconSize: 60,
+                     child: IconButton(
+                        iconSize: 40,
                         icon: const Icon(Icons.phone),
                         color: Colors.white,
                         onPressed: () {
@@ -254,7 +252,7 @@ class MyHomePage extends StatelessWidget {
                                   builder: (context) => Calls_Gov()));
                         },
                       ),
-                    ),
+                  
                   ),
                   /*Ink(
                     decoration: const ShapeDecoration(
@@ -289,7 +287,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                 /* Ink(
+                  Ink(
                     decoration: const ShapeDecoration(
                       color: Color(0xFF3F979B),
                       shape: CircleBorder(),
@@ -299,13 +297,13 @@ class MyHomePage extends StatelessWidget {
                       icon: const Icon(Icons.dangerous_rounded),
                       color: Colors.white,
                       onPressed: () {
-                        Navigator.push(
+                        /*Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>  self_defence()));
+                                builder: (context) =>  ));*/
                       },
                     ),
-                  ),*/
+                  ),
                 ],
               ),
             ),
