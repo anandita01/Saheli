@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:gsochome/components/custom_textfield.dart';
+import 'package:gsochome/widgets/imagegrid.dart';
+
+class SelfDefence extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xFF3F979B),
+          title: Text('Self Defence '),
+        ),
+        body: ImageGrid());
+  }
+}
+/*import 'package:gsochome/components/custom_textfield.dart';
 import 'package:gsochome/components/ontapbutton.dart';
 import 'package:gsochome/screens/register_child.dart';
 import 'package:gsochome/screens/welcome_screen.dart';
@@ -36,4 +49,5 @@ class self_defence extends StatelessWidget {
 
     );
   }
-}
+}*/
+
