@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:gsochome/screens/Rate_us.dart';
+import 'package:gsochome/screens/Self_Defence.dart';
 import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 import 'package:gsochome/screens/call_gov.dart';
@@ -291,9 +292,14 @@ class MyHomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       iconSize: 40,
-                      icon: const Icon(Icons.emergency),
+                      icon: const Icon(Icons.dangerous_rounded),
                       color: Colors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>  self_defence()));
+                      },
                     ),
                   ),
                 ],
@@ -305,9 +311,7 @@ class MyHomePage extends StatelessWidget {
             Text(
               'GOVERNMENT SCHEMES',
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                  fontSize: 30),
+                  fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
               textAlign: TextAlign.start,
             ),
             const SizedBox(
@@ -321,7 +325,7 @@ class MyHomePage extends StatelessWidget {
                       'Launched on 22nd January 2015 by the Prime Minister of India in Haryana, the Beti Bachao Beti Padhao Scheme ensures survival, protection and education of girl children. The scheme aims to address issues of the declining sex ratio over the past few years, create social awareness and enhance the efficiency of welfare services developed for girls.',
                     maxLines:3,
                     overflow: TextOverflow.ellipsis,
-          
+         
                   )),*/
                   CustomContainer(
                     /*decoration: BoxDecoration(
@@ -332,30 +336,20 @@ class MyHomePage extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),*/
                     schemename: 'Beti Bachao Beti Padhao Scheme',
-                    info:
-                        'Launched on 22nd January 2015 by the Prime Minister of India in Haryana, the Beti Bachao Beti Padhao Scheme ensures survival, protection and education of girl children. The scheme aims to address issues of the declining sex ratio over the past few years, create social awareness and enhance the efficiency of welfare services developed for girls.',
+                    info: '''Launched on 22nd January 2015 by the Prime Minister of India in Haryana, the Beti Bachao Beti Padhao Scheme ensures survival, protection and education of girl children. The scheme aims to address issues of the declining sex ratio over the past few years, create social awareness and enhance the efficiency of welfare services developed for girls. ''',
+                  ),
+         
+                  CustomContainer(
+                    schemename: 'Working Women Hostel',
+                    info: '''To promote safe accommodation and environment for working women and provide daycare facilities for their children, the Government of India has introduced the 'Working Women Hostel Scheme'. Through this women empowerment scheme, the Government provides grant-in-aid for construction and new hostel buildings and extension of an existing building in rented premises.''',
                   ),
                   CustomContainer(
-                    /*image: new DecorationImage(
-                      fit: BoxFit.cover,
-                      colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                      image: new NetworkImage(
-                        'assets/BetiPadhao.jpg',
-                      )*/
-                    schemename: '2018 scheme',
-                    info: '',
+                    schemename: 'One Stop Centre Scheme',
+                    info: '''Next in the list of women empowerment schemes in India comes One Stop Centre Scheme. It is a centrally sponsored scheme and is funded through the Nirbhaya fund. State governments receive 100% central assistance to protect women affected by violence (gender-based such as acid attacks, rape, and sexual harassment) in public and private spaces. ''',
                   ),
                   CustomContainer(
-                    schemename: '',
-                    info: '',
-                  ),
-                  CustomContainer(
-                    schemename: '',
-                    info: '',
-                  ),
-                  CustomContainer(
-                    schemename: '',
-                    info: '',
+                    schemename: 'Women Helpline Scheme',
+                    info: '''Women Helpline Scheme is one of the government schemes for women empowerment that intends to give 24x7 emergency responses to women affected by violence in private or public spaces. The universalisation of women helpline numbers has been done in every State and Union Territory through a single toll-free number (181) that provides immediate support to women nationwide.''',
                   ),
                 ],
               ),
@@ -363,9 +357,11 @@ class MyHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                "Locations",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
+                "LOCATIONS",
+                  style: TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+
             ),
             LiveSafe(),
           ],

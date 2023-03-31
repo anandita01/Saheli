@@ -46,6 +46,11 @@ dependencies:
   firebase_core: ^2.8.0
   cloud_firestore: ^4.4.5
   gradient_app_bar: ^0.1.3
+  readmore: ^2.1.0
+
+
+  video_player:
+
 
   #launch phone call indirectly
   url_launcher: ^6.0.9
