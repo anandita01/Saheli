@@ -29,8 +29,9 @@ Back end: FireBase & Firestore
 # Glimpses of our App:
 
 ![WhatsApp Image 2023-03-31 at 11 24 36 AM (2)](https://user-images.githubusercontent.com/114486225/229035827-3a2645da-30ef-4742-86a3-44ae4d9623ba.jpeg)
-![WhatsApp Image 2023-03-31 at 11 24 18 AM](https://user-images.githubusercontent.com/114486225/229043575-92cc8e0b-3232-4e87-ba13-2c16cfff2661.jpeg)
 
+
+![WhatsApp Image 2023-03-31 at 12 38 20 PM](https://user-images.githubusercontent.com/114486225/229048942-10d9cdb7-95e8-4c4f-9eb3-2a771fedbdab.jpeg)
 
 ![WhatsApp Image 2023-03-31 at 11 24 36 AM](https://user-images.githubusercontent.com/114486225/229035871-af44af34-165c-40e7-aa5e-9462b7589397.jpeg)
 
@@ -43,6 +44,3 @@ user-images.githubusercontent.com/114486225/229038962-2a78fa83-9009-4c4d-9da3-b4
 
 ![WhatsApp Image 2023-03-31 at 11 24 17 AM](https://user-images.githubusercontent.com/114486225/229038941-3c4fe610-70e7-4205-96b7-f57b9e5471dc.jpeg)
 
-![WhatsApp Image 2023-03-31 at 11 24 24 AM](https://user-images.githubusercontent.com/![WhatsApp Image 2023-03-31 at 11 24 10 AM](https://user-images.githubusercontent.com/114486225/229043263-257f291e-4712-4fe0-8eeb-58cc10d619e9.jpeg)![WhatsApp Image 2023-03-31 at 11 24 10 AM (2)](https://user-images.githubusercontent.com/114486225/229043279-882d0fc1-2098-4f6a-9d8f-43314d8affd7.jpeg)
-
-114486225/229043084-8cbf068e-b0c9-4623-b34b-823986fd5232.jpeg)
