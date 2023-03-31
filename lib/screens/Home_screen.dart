@@ -238,21 +238,22 @@ class MyHomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Ink(
-                    decoration: const ShapeDecoration(
+                     decoration: const ShapeDecoration(
                       color: Color(0xFF3F979B),
                       shape: CircleBorder(),
                     ),
-                    child: IconButton(
-                      iconSize: 40,
-                      icon: const Icon(Icons.phone),
-                      color: Colors.white,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Calls_Gov()));
-                      },
-                    ),
+                     child: IconButton(
+                        iconSize: 40,
+                        icon: const Icon(Icons.phone),
+                        color: Colors.white,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Calls_Gov()));
+                        },
+                      ),
+                  
                   ),
                   /*Ink(
                     decoration: const ShapeDecoration(
@@ -297,10 +298,10 @@ class MyHomePage extends StatelessWidget {
                       icon: const Icon(Icons.dangerous_rounded),
                       color: Colors.white,
                       onPressed: () {
-                        Navigator.push(
+                        /*Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SelfDefence()));
+                                builder: (context) =>  self_defence()));
                       },
                     ),
                   ),
