@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "215104120920",
-    "project_id": "saheli-d22e4",
-    "storage_bucket": "saheli-d22e4.appspot.com"
+    "project_number": "188397449902",
+    "project_id": "gsochome-ed3d1",
+    "storage_bucket": "gsochome-ed3d1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:215104120920:android:48a5bd3b0bb59835dbc22d",
+        "mobilesdk_app_id": "1:188397449902:android:13c2554078bd92d048733f",
         "android_client_info": {
           "package_name": "com.example.Saheli"
         }
       },
       "oauth_client": [
         {
-          "client_id": "215104120920-taaho94scpkg26p7ubn9tn8v6p4h2tl9.apps.googleusercontent.com",
+          "client_id": "188397449902-2ksqti5ean808k57a8hd3lcqt8ds7pup.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAFX_QQvKw5slT-Q7nmJ9-msSpWV1CLPMU"
+          "current_key": "AIzaSyDgwjSOPo2-9OckV1JH0rMtu7zOWNbrlO4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "215104120920-taaho94scpkg26p7ubn9tn8v6p4h2tl9.apps.googleusercontent.com",
+              "client_id": "188397449902-2ksqti5ean808k57a8hd3lcqt8ds7pup.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
