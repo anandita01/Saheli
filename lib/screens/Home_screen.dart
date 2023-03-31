@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:gsochome/screens/Rate_us.dart';
-import 'package:gsochome/screens/Self_Defence.dart';
 import 'package:gsochome/screens/aboutus.dart';
 import 'package:gsochome/screens/add_contacts.dart';
 import 'package:gsochome/screens/call_gov.dart';
@@ -237,19 +236,22 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   Ink(
                     decoration: const ShapeDecoration(
-                      color: Color(0xFF3F979B),
+                      color: Color.fromARGB(255, 182, 23, 20),
                       shape: CircleBorder(),
                     ),
-                    child: IconButton(
-                      iconSize: 40,
-                      icon: const Icon(Icons.phone),
-                      color: Colors.white,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Calls_Gov()));
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: IconButton(
+                        iconSize: 60,
+                        icon: const Icon(Icons.phone),
+                        color: Colors.white,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Calls_Gov()));
+                        },
+                      ),
                     ),
                   ),
                   /*Ink(
@@ -285,7 +287,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Ink(
+                 /* Ink(
                     decoration: const ShapeDecoration(
                       color: Color(0xFF3F979B),
                       shape: CircleBorder(),
@@ -301,7 +303,7 @@ class MyHomePage extends StatelessWidget {
                                 builder: (context) =>  self_defence()));
                       },
                     ),
-                  ),
+                  ),*/
                 ],
               ),
             ),
