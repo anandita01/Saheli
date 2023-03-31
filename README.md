@@ -44,3 +44,5 @@ user-images.githubusercontent.com/114486225/229038962-2a78fa83-9009-4c4d-9da3-b4
 
 ![WhatsApp Image 2023-03-31 at 11 24 17 AM](https://user-images.githubusercontent.com/114486225/229038941-3c4fe610-70e7-4205-96b7-f57b9e5471dc.jpeg)
 
+#Guidance on how to run code
+android studio/ VS code -> select an emulator -> go to the main dart file  ->  run the code without debugging
